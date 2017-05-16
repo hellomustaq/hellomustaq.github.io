@@ -1,0 +1,438 @@
+        body{
+            background-color: #2380ab;
+            font-family: monospace;
+            font-size: 15px;
+            color: white;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .clear{
+            clear: both;
+        }
+        #navi{
+            background-color: #3e97a2;
+            width: 100%;
+            height: 65px;
+            position: fixed;
+            box-shadow: 0px -1px 20px 1px;    
+            display: flex;
+
+        }
+        #navi>ul{
+            float: right;
+            margin: 0 auto;
+
+        }
+        #navi>ul>a>li{
+            list-style: none;
+            float: left;
+            padding: 15px 30px;
+        }
+        #navi>ul>a>li>i{
+            position: absolute;
+            color: white;
+        }
+        #navi>ul>a>li>i:hover {
+            background-color: black;
+            color: #12d1ca;
+            padding: 10px 10px 50px 10px;
+            top: 0;
+            border-radius: 0 0 10px 10px;
+        }
+        #topper{
+            display: flex;
+            margin: 60px auto;
+            flex-direction: column;
+            width: 50%;
+        }
+        #topper>h1{
+    text-align: center;
+}
+        #profileImg img{
+            width: 100%;
+            max-width: 350px;
+            border-radius: 50%;
+            box-shadow: 2px 2px 2px inset;
+            padding: 10px;
+            display: block;
+            margin: 0 auto;
+        }
+        #tagLine{
+            display: none;
+            margin: 10px auto;
+            visibility: collapse;
+        }
+        #tagLine ul li{
+            float: left;
+            list-style: none;
+        }
+        #tagLine ul li a{ 
+            margin: 8px;
+            padding: 10px;
+            background-color: #17c17b;
+            border-radius: 20px;
+            color: white;
+            text-decoration: none;
+        }
+        #about{
+            text-align: center;
+            margin: 0 auto;
+            width: 100%;
+        }
+        #meter{
+            width: 40%;
+            display: flex;
+            margin: 0 auto;
+        }
+        #cconp{
+            
+            animation: conP;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-direction:alternate;
+        }
+        @keyframes conP{
+                    0%{top: 0;border-top: 5px solid white;width: 100%;}
+                    25%{border-top: 5px solid white;width: 75%;}
+                    50%{border-top: 5px solid white; width: 50%;}
+                    75%{border-top: 5px solid white;width: 25%;}
+                    100%{border-top: 5px solid white;width: 100%;}
+
+                }
+        @keyframes borderkey{
+            0%{top: 0;border-top: 2px solid white;width: 25%;}
+            25%{border-top: 2px solid white;width: 50%;}
+            50%{border-top: 2px solid white; width: 75%;}
+            75%{border-top: 2px solid white;width: 50%;}
+            85%{border-top: 2px solid white;width: 80%;}
+            100%{border-top: 2px solid white;width: 100%;}
+        }
+        #borderani{
+            margin-bottom:10px;
+            animation: borderkey;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            animation-duration: 8s;
+        }
+        span{
+            background-color: #ff9800;
+            border-radius: 5px;
+        }
+        span a{
+            color: white;
+            padding: 12px;
+            text-decoration: none;
+
+        }
+        h4,h2{
+            padding: 0;
+            margin: 0;
+        }
+        #container{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        #edu{
+            margin: 20px;
+            width: 550px;
+            display: flex;
+
+        }
+        #skill{
+            margin: 20px;
+            width: 550px;
+            display: flex;
+        }
+        #achiev{
+            margin: 20px 20px 20px 30px;
+            width: 550px;
+            display: flex;
+        }
+        #exp{
+            margin: 20px;
+            width: 550px;
+            display: flex;
+        }
+        #edu:hover #eduicon>.fa-3x{
+            font-size: 5em;
+        }
+        #skill:hover #skillicon>.fa-3x{
+            font-size: 5em;
+        }
+        #achiev:hover #achievicon>.fa-3x{
+            font-size: 5em;
+        }
+        #exp:hover #expicon>.fa-3x{
+            font-size: 5em;
+        }
+        #eduicon,#expicon,#skillicon,#achievicon{
+            width: 100px;
+        }
+        /*#eduicon,#expicon,#skillicon,#achievicon>i{
+            float: right;
+        }*/
+        #eduinfo,#skillinfo,#achievinfo,#expinfo{
+            box-shadow: -5px 0 5px -5px;
+            padding: 10px;
+        }
+        #container-2{
+            width:50%;
+            margin: 0 auto;
+        }
+        #starimg{
+            height: 53px;
+            width: 50px;
+            border-radius: 50%;
+            line-height: 100px;
+            margin: 0;
+            padding: 0;
+            vertical-align: middle;
+        }
+        #container-2>#animation-title{
+            width: 50%;
+            margin: 0 20px;
+            position: relative;
+            z-index: -1;
+        }
+        #container-2>#animation-title>p{
+            position: relative;
+            background-color: #0fca6b;
+            width: 130px;
+            height: 35px;
+            text-align: center;
+            font-weight: bold;border-radius: 20px;
+            animation: fevani;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-direction:alternate;
+            animation-timing-function: ease-out;
+        }
+        @keyframes fevani{
+            0%{top:0px;left:0px;font-size: 28px;width: 190px;}
+            25%{top:0px;left: 100%;font-size: 28px;width: 270px;}
+            50%{top:30px;left: 100%;font-size: 28px;width:270px;}
+            75%{top:30px;left: 0px;font-size: 28px;width: 190px;}
+            100%{top:0px;left: 0px;font-size: 28px;width: 190px;}
+        }
+        #fev-info{
+            margin-top:50px;
+            box-shadow: -5px 0 5px -5px;
+            padding: 10px;
+        }
+.gellary{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 90%;
+}
+#spacial-h1{
+    margin: 0;
+    padding: 10px;
+    background: #ff5722;
+    border-radius: 35px;
+}
+#gellaryinfo{
+    margin: 0 auto;
+}
+#gellaryimg{
+    margin: 0 auto;
+    width: 81%;
+    max-width: 85%;
+    border: 8px ridge white;
+    background-color: #FF5722;
+    padding: 8px;
+}
+#spclimg{
+    border-radius: 20px;
+    padding: 5px;
+}
+
+#lastter{
+    background-color:#1b175a;
+    color: white; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#copyright{
+    text-align: center;
+}
+#mail{
+    margin: 0 auto;
+}
+#copyright>ul{
+    display: flex;
+}
+#copyright>ul>li{
+    list-style: none;
+    padding: 6px 6px 2px 6px;
+}
+#mail>ul{
+    display: flex;
+}
+#mail>ul>li{
+    list-style: none;
+    padding: 6px;
+}
+
+        @media only screen and (min-width: 900px) {
+                #edu:hover #eduicon>.fa-3x{
+                    font-size: 5em;
+                }
+                #skill:hover #skillicon>.fa-3x{
+                    font-size: 5em;
+                }
+                #achiev:hover #achievicon>.fa-3x{
+                    font-size: 5em;
+                }
+                #exp:hover #expicon>.fa-3x{
+                    font-size: 5em;
+                }
+            }
+
+        @media only screen and (max-width: 500px){
+            body{
+                font-size: 13px;
+            }
+            #about{
+                    margin:5px;
+                    width: 100%;
+            }
+            #topper{
+                    display: flex;
+                    margin: 40px auto;
+                    flex-direction: column;
+                    width: 88%;
+                }
+            #tagLine ul li{
+                    display: none;
+                    margin:0;
+                    padding: 0;
+                    visibility: hidden;
+                }
+            #tagLine ul li a{ 
+                    display: block;
+                    margin: 3px;
+                    padding: 5px;
+                    background-color: #17c17b;
+                    border-radius: 10px;
+                    color: white;
+                    text-decoration: none;
+                }
+                #container{
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: flex-start;
+                    width: 100%;
+                    max-width: 1200px;
+                    margin: 0 auto;
+                }
+                #edu{
+                    margin: 10px;
+                    width: 100%;
+                    display: block;
+                }
+                #skill{
+                    margin: 10px;
+                    width: 100%px;
+                    display: block;
+                }
+                #achiev{
+                    margin: 10px 10px 10px 10px;
+                    width: 100%;
+                    display: block;
+                }
+                #exp{
+                    margin: 10px;
+                    width: 100%;
+                    display: block;
+                }
+            
+                /*#edu:hover #eduicon>.fa-3x{
+                    font-size: 4em;
+                }
+                #skill:hover #skillicon>.fa-3x{
+                    font-size: 3em;
+                }
+                #achiev:hover #achievicon>.fa-3x{
+                    font-size: 3em;
+                }
+                #exp:hover #expicon>.fa-3x{
+                    font-size: 3em;
+                }*/
+
+                #eduicon,#expicon,#skillicon,#achievicon{
+                    margin: 0 auto;
+                    width: 100%;
+                }
+                #eduinfo,#skillinfo,#achievinfo,#expinfo{
+                    box-shadow: -5px 0 5px -5px;
+                    padding: 10px;
+                }
+            #container-2{
+            width:96%;
+            margin:10px 5px 10px 10px;
+            padding: 0;
+            display: block;
+        }
+            #fev-info{
+            margin-top:50px;
+            box-shadow: -5px 0 5px -5px;
+            padding: 5px 0px 5px 15px;
+        }
+            #container-2>#animation-title>p{
+            position: relative;
+            background-color: #0fca6b;
+            width: 230px;
+            height: 35px;
+            text-align: center;
+            font-weight: bold;border-radius: 20px;
+            animation: fevani;
+            animation-duration: 8s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-out;
+            }
+            #spclimg{
+            height: 16%;
+            width: 95%;
+            border-radius: 20px;
+            padding: 5px;
+        }
+            .gellary{
+                display: flex;
+                flex-direction: column;
+                margin: 0 auto;
+                width: 100%;
+            }
+            #gellaryimg{
+                margin: 0 auto;
+                max-width: 90%;
+                border: none;
+                background-color: #2380ab;
+                padding: 8px;
+            }
+            #spacial-h1{
+                margin: 0;
+                padding: 10px;
+                background: #083a5f;
+                border-radius: 35px;
+                box-shadow: 1px 1px 12px 7px inset;
+            }
+            #starimg{
+            display: block;
+            }
+            @keyframes fevani{
+            0%{top:0px;left:0px;font-size: 20px;width: 150px;}
+            25%{top:0px;font-size: 20px;width: 250px;}
+            50%{top:30px;font-size: 20px;width:250px;}
+            75%{top:30px;font-size: 20px;width: 250px;}
+            100%{top:0px;font-size: 20px;width: 250px;}
+        }
+
+        }
